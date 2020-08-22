@@ -1,13 +1,13 @@
 {
-  "name": "dama/doctrine-test-bundle",
+  "name": "ruano_a/doctrine-test-bundle",
   "description": "Symfony bundle to isolate doctrine database tests and improve test performance",
   "keywords": ["symfony", "doctrine", "tests", "isolation", "performance"],
   "type": "symfony-bundle",
   "license": "MIT",
   "authors": [
     {
-      "name": "David Maicher",
-      "email": "mail@dmaicher.de"
+      "name": "Aurélien Ruano",
+      "email": "aurelien.ruano@epitech.eu"
     }
   ],
   "require": {
