@@ -1,3 +1,7 @@
+### IMPORTANT NOTE !
+This bundle is a fork of the dmaicher's bundle, which you can find here : https://github.com/dmaicher/doctrine-test-bundle
+I made a fork because I wanted this bundle to only apply to my unit tests, not functional and more specifically the ones with a @ReloadDatabase annotation.
+
 [![PHP Version](https://img.shields.io/badge/php-%5E7.1-blue.svg)](https://img.shields.io/badge/php-%5E7.1-blue.svg)
 [![Stable release][Last stable image]][Packagist link]
 [![Unstable release][Last unstable image]][Packagist link]
@@ -30,7 +34,7 @@ It also includes a `StaticArrayCache` that will be automatically configured as m
     if (in_array($env, ['dev', 'test'])) {
         ...
         if ($env === 'test') {
-            $bundles[] = new DAMA\DoctrineTestBundle\DAMADoctrineTestBundle();
+            $bundles[] = new ruano_a\DoctrineTestBundle\DAMADoctrineTestBundle();
         }
     }
     ```
