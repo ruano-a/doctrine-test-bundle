@@ -1,6 +1,7 @@
 ### IMPORTANT NOTE !
 This bundle is a fork of the dmaicher's bundle, which you can find here : https://github.com/dmaicher/doctrine-test-bundle
 I made a fork because I wanted this bundle to only apply to my unit tests, not functional and more specifically the ones with a @ReloadDatabase annotation.
+The README remains the same except for a few changes to explain how to use this bundle.
 
 [![PHP Version](https://img.shields.io/badge/php-%5E7.1-blue.svg)](https://img.shields.io/badge/php-%5E7.1-blue.svg)
 [![Stable release][Last stable image]][Packagist link]
@@ -23,9 +24,19 @@ It also includes a `StaticArrayCache` that will be automatically configured as m
 ### How to install and use this Bundle?
 
 1. install via composer
-
+    
+    Since this bundle is a fork, it shouldn't be on packagist, therefore it's not on it. You have to add it as a repository in composer.json:
+    ```
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/ruano-a/doctrine-test-bundle.git"
+        }
+    ]
+    ```
+    Then you can require it :
     ```sh
-    composer require --dev dama/doctrine-test-bundle
+     composer require --dev ruano_a/doctrine-test-bundle
     ```
 
 2. Enable the bundle for your test environment in your `AppKernel.php`
