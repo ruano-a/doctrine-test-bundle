@@ -1,3 +1,6 @@
+### ABANDONNED !
+What I was trying to do is done on my bundle https://github.com/ruano-a/selective-test-isolation-bundle
+
 ### IMPORTANT NOTE !
 This bundle is a fork of the dmaicher's bundle, which you can find here : https://github.com/dmaicher/doctrine-test-bundle
 I made a fork because I wanted this bundle to only apply to my unit tests, not functional and more specifically the ones with a @ReloadDatabase annotation.
